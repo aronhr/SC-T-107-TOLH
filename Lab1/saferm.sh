@@ -1,13 +1,12 @@
 #!/bin/bash
 
 trash(){
-  if [[ ! -d "~/TRASH" ]]; then
-    mkdir ~/TRASH
-  else
-    echo "TRASH exist"
-  fi
-}
+ [ ! -d ~/Trash ] && mkdir ~/Trash
 
+for each in ${@} ; do
+        mv -vb "$each" ~/Trash
+done
+}
 if [ $# != 1 ]; then
   echo "Invalid number of arguments"
   exit
