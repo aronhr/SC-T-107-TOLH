@@ -2,8 +2,7 @@
 
 trash(){
  [ ! -d ~/Trash ] && mkdir ~/Trash ]
-        mv "$1" ~/Trash
-
+ mv "$1" ~/Trash
 }
 if [ $# != 1 ]; then
   echo "Invalid number of arguments"
