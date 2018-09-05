@@ -1,14 +1,17 @@
 #!/bin/bash
+
+
 swap()
 {
   local TMPFILE=tmp.$$
-  mv "$1" $TMPFILE
-  mv "$2" "$1"
-  mv $TMPFILE "$2"
+  cp "$1" $TMPFILE
+  cp "$2" "$1"
+  cp $TMPFILE "$2"
+  rm $TMPFILE
 }
 
 if [ $# != 2 ]; then
-  echo "Invalid number of arguments"
+  echo "Invalid number of arguments."
   exit
 else
   if [[ -f "$1" && -f "$2" ]]; then
@@ -30,3 +33,7 @@ else
      exit
   fi
 fi
+
+
+
+
