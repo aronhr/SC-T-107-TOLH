@@ -17,3 +17,8 @@ if [ -d "$LINK_OR_DIR" ]; then
     echo "The directory provided is a solid directory!"
   fi
 else
+  echo "The provided argument is not a directory"
+  exit
+fi
+
+find "$LINK_OR_DIR" -type f -iname "*.sh" -exec chmod +x {} \;
