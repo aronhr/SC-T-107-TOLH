@@ -2,8 +2,9 @@
 
 trash(){
  [ ! -d ~/Trash ] && mkdir ~/Trash ]
-        mv "$1" ~/Trash
-
+        tar czf "$1".tar.gz "$1"
+        mv "$1".tar.gz ~/Trash
+        rm "$1"
 }
 if [ $# != 1 ]; then
   echo "Invalid number of arguments"
