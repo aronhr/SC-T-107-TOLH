@@ -8,7 +8,7 @@ swap()
 }
 
 if [ $# != 2 ]; then
-  echo "Invalid number of arguments."
+  echo "Invalid number of arguments"
   exit
 else
   if [[ -f "$1" && -f "$2" ]]; then
