@@ -1,11 +1,13 @@
 #!/bin/bash
 
+
 swap()
 {
   local TMPFILE=tmp.$$
   cp "$1" $TMPFILE
   cp "$2" "$1"
-  rm $TMPFILE "$2"
+  cp $TMPFILE "$2"
+  rm $TMPFILE
 }
 
 if [ $# != 2 ]; then
@@ -31,3 +33,7 @@ else
      exit
   fi
 fi
+
+
+
+
