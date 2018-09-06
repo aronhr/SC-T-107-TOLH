@@ -9,15 +9,17 @@ run(){
     echo "Something went wrong"
   fi
 }
+
+if [ $# == 0 ]; then
+  LINK_OR_DIR="."
+else
+  LINK_OR_DIR="$1"
+fi
+
 if [ $# -gt 1 ]; then
   echo "Invalid number of arguments"
   exit
 else
-  if [ $# -eq 0 ]; then
-    LINK_OR_DIR="."
-  else
-    LINK_OR_DIR="$1"
-  fi
   if [[ -d "$LINK_OR_DIR" ]]; then #Check if file exist
     run #Calls function run
   else
