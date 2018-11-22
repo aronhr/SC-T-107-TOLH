@@ -61,3 +61,24 @@
 | a \|\| b   | 0x01  |
 | !a \|\| !b | 0x00  |
 | a && ~b    | 0x01  |
+
+
+## Question 9
+### Consider the following python program.
+
+>What hexadecimal number can be masked with the variable number so the program evaluates correctly if number is odd or even ?
+
+> Write your answer in one byte hexadecimal, for example **0xA2**
+
+
+´´´
+number = 0x9a
+
+isOdd = number & **0x01**
+
+if isOdd:
+    print(str(number) + " is odd number")
+else:
+    print(str(number) + " is even number")
+
+´´´
