@@ -37,7 +37,7 @@
 
 
 # Reverse Floating Point
-## Dæmi:
+## Dæmi Fyrir Normalized:
 ## 1.
 	s 	exp 				frac
 	   16 8 4 2 1  1/2 1/4 1/8 1/16  1/32 1/64
@@ -60,6 +60,33 @@
 	V = (-1)^s * M * 2^E
 	V = (-1)^0 * 11/8 * 2^(-12)
 	V = 11/32768
+
+
+## Dæmi Fyrir DeNormalized
+## 1. 
+	s 	exp 				frac
+	   16 8 4 2 1  1/2 1/4 1/8 1/16  1/32 1/64
+	0	0 0 0 0 0 	1   0   0    0    1    0
+
+## 2. Finna Bias
+	Bias = 2^(e-1)-1
+	Bias = 2^(5-1)-1 = 15
+
+## 3. Finna E
+	e = 1 (Alltaf 1)
+	E = 1 - Bias
+	E = 1 - 15 = -14
+
+## 4. Finna M
+	M = þar sem ás er fyrir neðan + 1
+	M = 1/2 + 1/32 = 17/32
+
+## 5. Formúla
+	V = (-1)^s * M * 2^E
+	V = (-1)^0 * 17/32 * 2^(-14)
+	V = 17/524288
+
+
 
 # Special
 	-Infinity > 1 11111 000000
