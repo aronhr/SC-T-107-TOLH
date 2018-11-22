@@ -1,4 +1,4 @@
-#Floating Point
+# Floating Point
 ## 1. Bias = 2^(e-1)-1
 ## 2.log2^(Nefnari) = Fjöldi færsla
 	0, _*(Fjöldi færsla)
