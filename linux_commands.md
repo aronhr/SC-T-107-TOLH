@@ -1,5 +1,10 @@
-# Linux skipanir
+# Linux commands
 ## Basics
+
+#### print working directory
+```console
+notandi@skel:~$ pwd
+```
 
 #### Make folder
 ```console
@@ -13,12 +18,12 @@ notandi@skel:~$ touch <<filename>>
 
 #### Copy file
 ```console
-notandi@skel:~$ cp <<destination>> <<filename>>
+notandi@skel:~$ cp <<filename>> <<destination>>
 ```
 
 #### Copy many files (Example: file1.txt file2.txt file3.txt file4.txt)
 ```console
-notandi@skel:~$ cp <<destination>> <<filename{1..4}.txt>>
+notandi@skel:~$ cp <<filename{1..4}.txt>> <<destination>>
 ```
 
 #### Copy folder
@@ -39,4 +44,31 @@ notandi@skel:~$ rm <<filename>>
 #### Delete folder (!!WARNING!!)
 ```console
 notandi@skel:~$ rm -dr <<folder>>
+```
+
+#### Count lines in file
+```console
+notandi@skel:~$ wc -l <<filename>>
+24349 apache.log
+```
+
+#### Count lines in file and export to new file
+```console
+notandi@skel:~$ wc -l <<filename>> > <<new filename>>
+24349 apache.log
+```
+
+#### Select specific lines that contains specific word
+```console
+notandi@skel:~$ grep '<<word>>' <<filename>>
+```
+
+#### Select specific lines that contains specific word and has special case
+```console
+notandi@skel:~$ grep '\*WARNING\* user...' <<filename>>
+```
+
+#### Select specific lines that contains specific word and export to new file
+```console
+notandi@skel:~$ grep '<<word>>' <<filename>> > <<new filename>>
 ```
