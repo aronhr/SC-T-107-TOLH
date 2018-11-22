@@ -42,3 +42,22 @@
 | a & b      | 0001 0000  |
 | a \| b     | 1111 0110  |
 | a ^ b      | 1110 0110  |
+
+
+## Question 7
+### Suppose that a and b have byte values of 0x56 and 0x45, respectively. Fill in the following table indicating the byte values of different expressions.
+
+>Note that logical operators return either **1** or **0**, indicating a result of either **TRUE** or **FALSE**.
+
+>Write your answer in one byte hexadecimal, for example **0xA2**
+
+| Expression | Value      |
+| :--------: |:----------:|
+| a & b         | 0000 1111  |
+| a \| b          | 1110 1001  |
+| ~a \| ~b      | 0001 0000  |
+| a & !b     | 1111 0110  |
+| a && b      | 1110 0110  |
+| a \|| b      | 1110 0110  |
+| !a \|| !b      | 1110 0110  |
+| a && ~b      | 1110 0110  |
