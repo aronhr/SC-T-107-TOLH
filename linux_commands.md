@@ -92,3 +92,13 @@ notandi@skel:~$ grep '<<word>>' <<filename>> | sort
 ```console
 notandi@skel:~$ grep -r '<<word>>' <<filename>> sort > <<new filename>>
 ```
+
+#### Remove lines that contain specific string in file
+```console
+notandi@skel:~$ sed '/<<string>>/d' <<filename>>
+```
+
+#### Remove lines that contain specific string in file and export to new file
+```console
+notandi@skel:~$ sed '/<<string>>/d' <<filename>> > <<new filename>>
+```
