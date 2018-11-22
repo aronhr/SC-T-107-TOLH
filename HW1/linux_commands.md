@@ -6,32 +6,32 @@
 notandi@skel:~$ echo <<string>>
 ```
 
-#### print contents of a directory
+#### Print contents of a directory
 ```console
 notandi@skel:~$ ls
 ```
 
-#### go to another directory
+#### Go to another directory
 ```console
 notandi@skel:~$ cd <<directory>>
 ```
 
-#### print working directory
+#### Print working directory
 ```console
 notandi@skel:~$ pwd
 ```
 
-#### print the contents of a file to the screen
+#### Print the contents of a file to the screen
 ```console
 notandi@skel:~$ cat <<filename>>
 ```
 
-#### print first few lines of a file
+#### Print first few lines of a file
 ```console
 notandi@skel:~$ head <<filename>>
 ```
 
-#### prints last 10 lines
+#### Prints last 10 lines
 ```console
 notandi@skel:~$ tail <<filename>>
 ```
