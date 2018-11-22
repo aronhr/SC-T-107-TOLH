@@ -1,4 +1,4 @@
-# HW1 Bits and Bytes
+# HW3 Integers & Floating Point
 ## Question 1
 
 ### Consider a 6-bit two’s complement representation. Fill in the empty boxes in the following table:
