@@ -1,5 +1,5 @@
-## Linux skipanir
-### Basics
+# Linux skipanir
+## Basics
 
 #### Make folder
 ```console
