@@ -2,11 +2,11 @@
 ### Basics
 
 #### Make folder
-```shell
-mkdir <<filename>>
+```console
+notandi@skel:~$ mkdir <<filename>>
 ```
 
+#### Make file
 ```console
-foo@bar:~$ whoami
-foo
+notandi@skel:~$ touch <<filename>>
 ```
