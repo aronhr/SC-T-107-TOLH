@@ -82,3 +82,53 @@ else:
     print(str(number) + " is even number")
 
 ´´´
+
+## Question 10
+### You and your friend are helping each other out with a homework assignment in Tölvuhögun.
+
+>The assignment is a quiz with multiple choice questions. Each question has four possible answers: a, b, c and d.
+
+>You split the assignment into two halves, you solve the first half and your friend the other half.
+
+>You are so afraid of getting caught, so you come up with a system.
+You communicate by sending information hidden in a 2 byte binary string.
+
+>The question number is located in bits 6,7,8 and 9.
+The answer is located in bits **12** and **13**
+
+|15   |14   |13   |12   |11   |10   |9    |8    |7    |6    |5    |4    |3    |2    |1    |0    |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+|     |     |a    |a    |     |     |q    |q    |q    |q    |     |     |     |     |     |     |
+
+>You can encode the answer as follows:
+
+0 = a
+1 = b
+2 = c
+3 = d
+
+>Answer to what question is hidden in the number **0x7D9A**
+and what is the answer ?
+
+
+> Complete this code:
+
+>The values used to mask the number should be answered in a two byte hexadecimal.
+The values used to shift should be answered in decimal.
+
+´´´
+number = 0x7d9a
+
+question_mask = number & **0x3C0**
+
+answer_mask = number & **0x3000**
+
+question_number = question_mask >> **6**
+
+answer = answer_mask >> **12**
+
+´´´
+
+>Question number: **6**
+
+>Answer (a,b,c or d): **D**
