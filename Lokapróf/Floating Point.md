@@ -90,6 +90,5 @@
 
 # Special
 	-Infinity > 1 11111 000000
-
 	+Infinity > 0 11111 000000
 	 NaN 	  > 1 11111 111111
