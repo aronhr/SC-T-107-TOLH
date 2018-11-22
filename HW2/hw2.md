@@ -22,7 +22,6 @@
 ### Consider an 9-bit IEEE floating-point representation with 1 sign bit, 5 exponent bits and 3 fraction bits.
 |s    |e    |e    |e    |e    |e    |f    |f    |f    |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|     |     |     |     |     |     |     |     |     |
 
 >Fill in the blanks in the following table.
 >Express the numerical values as fractions in their lowest terms (e.g 277/512, 1/2)
