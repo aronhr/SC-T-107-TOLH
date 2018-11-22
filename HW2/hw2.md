@@ -23,10 +23,6 @@
 |s    |e    |e    |e    |e    |e    |f    |f    |f    |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 
->Fill in the blanks in the following table.
->Express the numerical values as fractions in their lowest terms (e.g 277/512, 1/2)
+>Fill in the blanks in the following table. Express the numerical values as fractions in their lowest terms (e.g 277/512, 1/2)
 
->Special values should be on answered as listed
->Positive Infinity: Infinity+
->Negative Infinity: Infinity-
->Not a Number: NaN
+>Special values should be on answered as listed Positive Infinity: Infinity+ Negative Infinity: Infinity- Not a Number: NaN
