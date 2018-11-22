@@ -17,3 +17,17 @@
 | TMax + 1      | -32                    | 10 0000                |
 |-TMax          | -31                    | 10 0001                |
 |-TMin          | -32                    | 10 0000                |
+
+## Question 2
+### Consider an 9-bit IEEE floating-point representation with 1 sign bit, 5 exponent bits and 3 fraction bits.
+s	e	e	e	e	e	f	f	f
+|s    |e    |e    |e    |e    |e    |f    |f    |f    |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+
+>Fill in the blanks in the following table.
+>Express the numerical values as fractions in their lowest terms (e.g 277/512, 1/2)
+
+>Special values should be on answered as listed
+>Positive Infinity: Infinity+
+>Negative Infinity: Infinity-
+>Not a Number: NaN
