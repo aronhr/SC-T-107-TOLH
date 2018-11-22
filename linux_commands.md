@@ -116,8 +116,6 @@ notandi@skel:~$ chmod +x <<filename>>
 #### Create a script that only prints out the specific string from file
 ```console
 notandi@skel:~$ vim <<filename>>
-  ```shell
   #!/bin/bash
   grep '<<string>>' <<filename>> | cut -d '<<char that you want to cut on>>' -f9 | sort | uniq
-  ```
 ```
