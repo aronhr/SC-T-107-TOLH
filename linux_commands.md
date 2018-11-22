@@ -1,9 +1,39 @@
 # Linux commands
 ## Basics
 
+#### Echo string
+```console
+notandi@skel:~$ echo <<string>>
+```
+
+#### print contents of a directory
+```console
+notandi@skel:~$ ls
+```
+
+#### go to another directory
+```console
+notandi@skel:~$ cd <<directory>>
+```
+
 #### print working directory
 ```console
 notandi@skel:~$ pwd
+```
+
+#### print the contents of a file to the screen
+```console
+notandi@skel:~$ cat <<filename>>
+```
+
+#### print first few lines of a file
+```console
+notandi@skel:~$ head <<filename>>
+```
+
+#### prints last 10 lines
+```console
+notandi@skel:~$ tail <<filename>>
 ```
 
 #### Make folder
