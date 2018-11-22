@@ -71,17 +71,17 @@
 > Write your answer in one byte hexadecimal, for example **0xA2**
 
 
-´´´
+``` python
 number = 0x9a
 
-isOdd = number & **0x01**
+isOdd = number & 0x01
 
 if isOdd:
     print(str(number) + " is odd number")
 else:
     print(str(number) + " is even number")
 
-´´´
+```
 
 ## Question 10
 ### You and your friend are helping each other out with a homework assignment in Tölvuhögun.
@@ -116,18 +116,18 @@ and what is the answer ?
 >The values used to mask the number should be answered in a two byte hexadecimal.
 The values used to shift should be answered in decimal.
 
-´´´
+```python
 number = 0x7d9a
 
-question_mask = number & **0x3C0**
+question_mask = number & 0x3C0
 
-answer_mask = number & **0x3000**
+answer_mask = number & 0x3000
 
-question_number = question_mask >> **6**
+question_number = question_mask >> 6
 
-answer = answer_mask >> **12**
+answer = answer_mask >> 12
 
-´´´
+```
 
 >Question number: **6**
 
