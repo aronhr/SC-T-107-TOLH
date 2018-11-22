@@ -1,6 +1,6 @@
-#Homework 4 - Assembly
+# Homework 4 - Assembly
 
-##Question 1
+## Question 1
 
 | Address  | Value   | Register  | Value |
 | :------: |:-------:| :--------:| :----:|
@@ -21,7 +21,7 @@ What is the value of the operand ?
 
 > 0xAD
 
-##Question 2
+## Question 2
 
 | Address  | Value   | Register  | Value |
 | :------: |:-------:| :--------:| :----:|
@@ -48,7 +48,7 @@ What is the value of the %rdx after the command has been executed ?
 
 
 
-##Question 5
+## Question 5
 | Address  | Value   | Register  | Value |
 | :------: |:-------:| :--------:| :----:|
 | 0x100    | 0x40    | %rax      | 0x100 |
@@ -66,3 +66,5 @@ What is the value of the %rdx after the command has been executed ?
 | incq 0x1(%rax, %rdx, 5)     | 0x110         | 0x3    |
 | decq %rcx 			      | %rcx          | 0x0    |
 | addq %rdx, %rax    		  | %rax          | 0x103  |
+
+
