@@ -58,17 +58,37 @@ notandi@skel:~$ wc -l <<filename>> > <<new filename>>
 24349 apache.log
 ```
 
-#### Select specific lines that contains specific word
+#### Select specific lines that contains specific word in file
 ```console
 notandi@skel:~$ grep '<<word>>' <<filename>>
 ```
 
-#### Select specific lines that contains specific word and has special case
+#### Select specific lines that contains specific word in file and has special case
 ```console
 notandi@skel:~$ grep '\*WARNING\* user...' <<filename>>
 ```
 
-#### Select specific lines that contains specific word and export to new file
+#### Select specific lines that contains specific word in file and export to new file
 ```console
 notandi@skel:~$ grep '<<word>>' <<filename>> > <<new filename>>
+```
+
+#### Select specific lines that contains specific word in files inside folder
+```console
+notandi@skel:~$ grep -r '<<word>>' <<filename>>
+```
+
+#### Select specific lines that contains specific word in files inside folder and export to new file
+```console
+notandi@skel:~$ grep -r '<<word>>' <<filename>> > <<new filename>>
+```
+
+#### Select specific lines that contains specific word in file ordered
+```console
+notandi@skel:~$ grep '<<word>>' <<filename>> | sort
+```
+
+#### Select specific lines that contains specific word in files inside folder and export to new file ordered
+```console
+notandi@skel:~$ grep -r '<<word>>' <<filename>> sort > <<new filename>>
 ```
